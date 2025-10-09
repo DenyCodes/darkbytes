@@ -7,9 +7,23 @@ export const Div = styled.div`
   flex-shrink: 0;
   background: linear-gradient(90deg, rgba(17, 17, 17, 0.85) 0%, #111 40.29%);
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
+  padding-top: 150px;
+  flex-direction: column;
+  hr {
+    width: 300px;
+    height: 1px;
+    border: 1px solid #8f9495;
+    margin-top: 20px;
+    margin-left: 320px;
+  }
+  h1 {
+    margin-left: 320px;
+  }
+  p {
+    margin-left: 320px;
+    margin-top: 10px;
+  }
 `
 export const TF = styled.div`
   width: 1920px;
@@ -53,5 +67,40 @@ export const HelpDiv = styled.div`
     font-style: normal;
     font-weight: var(--font-weight-400, 400);
     line-height: var(--item-spacing-24, 24px); /* 150% */
+  }
+  img {
+    width: 32px;
+    height: 29px;
+    flex-shrink: 0;
+  }
+`
+export const GrupoDiv = styled.div`
+  width: 173px;
+  height: 72px;
+  flex-shrink: 0;
+  margin-left: 360px;
+  padding-top: 40px;
+  h4 {
+    color: #8f9495;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  p {
+    color: #8f9495;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  h5 {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
   }
 `
