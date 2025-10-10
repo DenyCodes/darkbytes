@@ -7,6 +7,7 @@ const EstiloGlobal = createGlobalStyle`
     font-family: 'Poppins';
     list-style: none;
     box-sizing: border-box;
+    max-width: 100%;
   }
 
 `
