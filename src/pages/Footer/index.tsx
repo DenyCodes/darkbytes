@@ -1,5 +1,15 @@
-import { Div, GrupoDiv, HelpDiv, TF } from './styles'
+import {
+  AtendimentoDiv,
+  Div,
+  Facein,
+  GrupoDiv,
+  HelpDiv,
+  InstaIcon,
+  TF
+} from './styles'
 import Vector2 from '../../images/Vector2.svg'
+import FaceIcon from '../../images/faceic.png'
+import insta from '../../images/instaic.png'
 
 const Footer = () => {
   return (
@@ -19,6 +29,19 @@ const Footer = () => {
         <h1>Entre em contato</h1>
         <hr />
         <p>Rio de Janeiro - RJ</p>
+        <Facein>
+          <img src={FaceIcon} alt="" />
+        </Facein>
+        <InstaIcon>
+          <img src={insta} alt="" />
+        </InstaIcon>
+        <AtendimentoDiv>
+          <h1>horario de atendimento</h1>
+          <hr />
+          <p>
+            Segunda a Sexta 09:00 - 22:00 Sábado domingo e feriado 09:00 - 13:00
+          </p>
+        </AtendimentoDiv>
       </Div>
       <TF>
         <h3>

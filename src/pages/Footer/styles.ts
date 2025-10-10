@@ -104,3 +104,57 @@ export const GrupoDiv = styled.div`
     text-transform: uppercase;
   }
 `
+export const Facein = styled.div`
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #e67e30;
+  margin-left: 320px;
+  margin-top: 20px;
+  img {
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+`
+export const InstaIcon = styled.div`
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #fff;
+  color: #000;
+  margin-left: 380px;
+  margin-top: -41px;
+  img {
+    flex-shrink: 0;
+    margin-top: 13px;
+    margin-left: 12px;
+  }
+`
+export const AtendimentoDiv = styled.div`
+  position: absolute;
+  margin-left: 35%;
+  width: 1920px;
+  height: 200px;
+  flex-shrink: 0;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  hr {
+    width: 300px;
+    height: 1px;
+    border: 1px solid #8f9495;
+    margin-top: 20px;
+    margin-left: 320px;
+  }
+  h1 {
+    margin-left: 320px;
+  }
+  p {
+    width: 340px;
+    margin-left: 320px;
+    margin-top: 10px;
+  }
+`
