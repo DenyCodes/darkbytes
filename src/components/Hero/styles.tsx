@@ -6,30 +6,68 @@ export const Sect = styled.section`
   padding: 4rem 2rem;
   text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: #e67e30;
-    width: 21em;
-    margin-left: 10em;
+    max-width: 800px;
+    width: 100%;
+    line-height: 1.2;
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
+    max-width: 700px;
+    width: 100%;
   }
 
   button {
     background-color: #ff6600;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 
     &:hover {
       background-color: #e65c00;
+    }
+  }
+
+  /* Tablets */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Desktops */
+  @media (min-width: 1200px) {
+    padding: 6rem 4rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    button {
+      font-size: 1.15rem;
+      padding: 1rem 2rem;
     }
   }
 `

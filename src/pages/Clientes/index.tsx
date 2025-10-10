@@ -10,10 +10,6 @@ const Clientes = () => {
         <img src="https://placehold.co/314x200" alt="" />
         <img src="https://placehold.co/314x200" alt="" />
         <img src="https://placehold.co/314x200" alt="" />
-      </Imgs>
-      <Imgs>
-        <img src="https://placehold.co/314x200" alt="" />
-        <img src="https://placehold.co/314x200" alt="" />
         <img src="https://placehold.co/314x200" alt="" />
         <img src="https://placehold.co/314x200" alt="" />
         <img src="https://placehold.co/314x200" alt="" />

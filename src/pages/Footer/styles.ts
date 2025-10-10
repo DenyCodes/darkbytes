@@ -136,7 +136,6 @@ export const InstaIcon = styled.div`
 export const AtendimentoDiv = styled.div`
   position: absolute;
   margin-left: 35%;
-  width: 1920px;
   height: 200px;
   flex-shrink: 0;
   display: flex;
