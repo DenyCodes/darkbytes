@@ -1,86 +1,118 @@
 import styled from 'styled-components'
-import Hero from '../../images/hero.jpg'
-export const Sect = styled.section`
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background:
-    linear-gradient(97deg, rgba(0, 0, 0, 0) -1.38%, rgba(0, 0, 0, 0.83) -1.37%),
-    url(${Hero}) lightgray 50% / cover no-repeat;
-  color: #000;
-  padding: 4rem 2rem;
-  text-align: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
+export const Sect = styled.section`
+  .img-hero {
+    position: absolute;
+    left: 65%;
+    top: 200px;
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .btn {
+    width: 220px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e34d0e;
+    h1 {
+      margin-top: 20px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .btn2 {
+    border: 2px solid #d1d5dc;
+    width: 220px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    h1 {
+      margin-top: 20px;
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  margin-top: 180px;
+  margin-left: 200px;
+  max-width: 650px;
 
   h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #e67e30;
-    max-width: 800px;
-    width: 100%;
+    font-size: 56px;
+    font-weight: 600;
+    color: #111827;
     line-height: 1.2;
+    margin-bottom: 20px;
   }
 
   p {
-    color: #fff;
-    font-size: 15px;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 50px;
   }
 
-  button {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    padding: 0.9rem 1.8rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
+  .Cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .Card {
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius: 14px;
+    width: 242px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
-      background-color: #e65c00;
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.06);
+      transform: translateY(-3px);
     }
-  }
 
-  /* Tablets */
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 2.5rem;
+    .icons {
+      width: 24px;
+      height: 24px;
+      margin-top: 10px;
+      display: relative;
     }
-    p {
-      font-size: 1rem;
-    }
-  }
 
-  /* Desktops */
-  @media (min-width: 1200px) {
-    padding: 6rem 4rem;
-
-    h1 {
-      font-size: 2rem;
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #111827;
+      margin: 0 0 4px 0;
     }
 
     p {
-      font-size: 15px;
-    }
-
-    button {
-      font-size: 1.15rem;
-      padding: 1rem 2rem;
+      font-size: 12px;
+      color: #6b7280;
+      margin: 0;
     }
   }
+`
+export const Ihero = styled.div`
+  position: absolute;
+  left: 65%;
+  top: 200px;
 `
