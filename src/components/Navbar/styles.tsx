@@ -12,6 +12,16 @@ export const Nav = styled.nav`
   justify-content: center;
   gap: 0.75rem;
   text-align: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 112px;
+    width: 115px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+  }
 
   h1 {
     margin: 0;
@@ -43,7 +53,7 @@ export const Nav = styled.nav`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 50rem;
 
     h1 {
       font-size: 1.6rem;

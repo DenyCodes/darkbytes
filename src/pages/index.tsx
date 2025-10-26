@@ -5,6 +5,7 @@ import Sobre from './Sobre'
 import Page from './Clientes'
 import Contato from './Contato'
 import Footer from './Footer'
+import Make from './Make'
 
 const Home = () => {
   return (
@@ -12,8 +13,7 @@ const Home = () => {
       <EstiloGlobal />
       <Navbar />
       <Hero />
-      <Sobre />
-      <Page />
+      <Make />
       <Contato />
       <Footer />
     </>
