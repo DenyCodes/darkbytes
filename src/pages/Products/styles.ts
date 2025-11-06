@@ -92,7 +92,6 @@ export const CategoryItem = styled.li<CategoryItemProps>`
 
   @media (max-width: 900px) {
     margin-bottom: 0;
-    flex: 0 0 auto;
   }
 `
 

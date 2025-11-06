@@ -24,7 +24,6 @@ export const Sect = styled.section`
     color: #e67e30;
     max-width: 800px;
     width: 100%;
-    line-height: 1.2;
   }
 
   p {
