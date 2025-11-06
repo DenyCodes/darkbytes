@@ -1,100 +1,18 @@
-import React, { useState } from 'react'
-import table from '../../images/table.png'
+import React, { useState, useMemo } from 'react'
 import * as S from './styles'
+import produtosData from './table'
 
-/* Tipos */
-interface Produto {
-  id: number
-  nome: string
-  imagem: string
-  categoria: string
-}
-
-/* Dados completos */
-const produtosData: Produto[] = [
-  {
-    id: 1,
-    nome: 'Suporte Ergonômico',
-    imagem: table,
-    categoria: 'Acessórios Ergonômicos'
-  },
-  {
-    id: 2,
-    nome: 'Apoio de Monitor',
-    imagem: table,
-    categoria: 'Acessórios Ergonômicos'
-  },
-  {
-    id: 3,
-    nome: 'Biombo Acústico',
-    imagem: table,
-    categoria: 'Biombos'
-  },
-  {
-    id: 4,
-    nome: 'Estação Modular',
-    imagem: table,
-    categoria: 'Biombos'
-  },
-  {
-    id: 5,
-    nome: 'Estrutura Metálica Slim',
-    imagem: table,
-    categoria: 'Estruturas para Mesas'
-  },
-  {
-    id: 6,
-    nome: 'Pé Regulável',
-    imagem: table,
-    categoria: 'Estruturas para Mesas'
-  },
-  {
-    id: 7,
-    nome: 'Banco Urbano de Aço',
-    imagem: table,
-    categoria: 'Mobiliário Urbano'
-  },
-  {
-    id: 8,
-    nome: 'Lixeira Modular',
-    imagem: table,
-    categoria: 'Mobiliário Urbano'
-  },
-  {
-    id: 9,
-    nome: 'Perfil Estrutural 3x3',
-    imagem: table,
-    categoria: 'Perfis Metálicos'
-  },
-  {
-    id: 10,
-    nome: 'Perfil Tubular Reforçado',
-    imagem: table,
-    categoria: 'Perfis Metálicos'
-  },
-  {
-    id: 11,
-    nome: 'Mesa MRM Slim',
-    imagem: table,
-    categoria: 'Mesa MRM'
-  },
-  {
-    id: 12,
-    nome: 'Mesa MRM Industrial',
-    imagem: table,
-    categoria: 'Mesa MRM'
-  }
-]
-
-/* Categorias derivadas */
-const categorias = Array.from(new Set(produtosData.map((p) => p.categoria)))
-
-/* Componente principal */
 export default function ProdutosSection() {
-  const [categoriaAtiva, setCategoriaAtiva] = useState<string>(categorias[0])
+  const categorias = useMemo(
+    () => Array.from(new Set(produtosData.map((p) => p.categoria))),
+    []
+  )
 
-  const produtosVisiveis = produtosData.filter(
-    (p) => p.categoria === categoriaAtiva
+  const [categoriaAtiva, setCategoriaAtiva] = useState(categorias[0])
+
+  const produtosVisiveis = useMemo(
+    () => produtosData.filter((p) => p.categoria === categoriaAtiva),
+    [categoriaAtiva]
   )
 
   return (
@@ -121,8 +39,8 @@ export default function ProdutosSection() {
           <S.Title>{categoriaAtiva}</S.Title>
 
           <S.Grid>
-            {produtosVisiveis.map((prod) => (
-              <S.Card key={prod.id}>
+            {produtosVisiveis.map((prod, index) => (
+              <S.Card key={`${prod.id}-${index}`}>
                 <S.ImgWrap>
                   <S.ProductImg
                     src={prod.imagem}

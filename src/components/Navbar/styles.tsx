@@ -40,6 +40,7 @@ export const Nav = styled.nav`
 
   /* Tablet e desktop: layout em linha com centralização total */
   @media (min-width: 768px) {
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
