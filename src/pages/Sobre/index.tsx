@@ -1,10 +1,10 @@
 import { About } from './styles'
-
+import img from '../../images/img.png'
 const Sobre = () => {
   return (
     <About>
       <div>
-        <img src="https://placehold.co/600x400" alt="" />
+        <img src={img} alt="" />
       </div>
       <div>
         <h1>Transformamos ideias em experiências digitais impactantes.</h1>

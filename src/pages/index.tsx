@@ -5,6 +5,7 @@ import Sobre from './Sobre'
 import Page from './Clientes'
 import Contato from './Contato'
 import Footer from './Footer'
+import ProdutosSection from './Products'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <EstiloGlobal />
       <Navbar />
       <Hero />
+      <ProdutosSection />
       <Sobre />
       <Page />
       <Contato />

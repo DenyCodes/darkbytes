@@ -1,5 +1,5 @@
 import { Div, H1, Imgs } from './styles'
-
+import hero from '../../images/hero.jpg'
 const Clientes = () => {
   return (
     <Div>
